@@ -8,14 +8,17 @@
  * @returns {Boolean} Boolean
  */
 
-function isValidUrl(content, whitelist = []) {
-  let regex =
-    /(?:(?:https?|ftp|file|http?):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#\/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[A-Z0-9+&@#\/%=~_|$])/gim
-  const match = regex.test(content)
-  let urls = content.match(regex)
-  urls = urls.filter((url) => !whitelist.find((wurl) => url.includes(wurl)))
-  if (urls.length === 0) return false
-  return match
+function isValidUrl(content) {
+  var pattern = new RegExp(
+    "^(https?:\\/\\/)?" +
+      "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" +
+      "((\\d{1,3}\\.){3}\\d{1,3}))" +
+      "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" +
+      "(\\?[;&a-z\\d%_.~+=-]*)?" +
+      "(\\#[-a-z\\d_]*)?$",
+    "i"
+  )
+  return !!pattern.test(content)
 }
 
 module.exports = isValidUrl
