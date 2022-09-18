@@ -1,0 +1,29 @@
+{
+  "name": "esmile-useful",
+  "version": "0.0.20",
+  "description": "Esmile Utility",
+  "main": "index.js",
+  "keywords": [
+    "images",
+    "gen",
+    "utils",
+    "validations",
+    "wait",
+    "convert",
+    "colors",
+    "key",
+    "log",
+    "type",
+    "url",
+    "email",
+    "backend"
+  ],
+  "author": "zastinian@gmail.com",
+  "license": "Copyright",
+  "dependencies": {
+    "node-fetch": "^3.2.10"
+  },
+  "engines": {
+    "node": ">=16.9.0"
+  }
+}
