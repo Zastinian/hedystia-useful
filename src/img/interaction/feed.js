@@ -1,4 +1,8 @@
 /**
+ * Generates the image of a feed
+ * @returns The URL of the image.
+ */
+/**
  * @description Generates the image of a feed
  * @author Zastinian
  * @example
@@ -13,4 +17,5 @@ async function feed() {
   return body.url
 }
 
+/* Exporting the function `feed` so that it can be used in other files. */
 module.exports = feed

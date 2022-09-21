@@ -1,4 +1,9 @@
 /**
+ * It takes a string and returns a number of milliseconds
+ * @param ms - The time in milliseconds.
+ * @returns The number of milliseconds in the given time.
+ */
+/**
  * @description Converts the indicated time to milliseconds
  * @author Zastinian
  * @param {String} ms
@@ -12,7 +17,6 @@
  * console.log(millisecond('1 y'))
  * @returns {Number} Number
  */
-
 function millisecond(ms) {
   var type = typeof ms,
     amount,
@@ -107,4 +111,5 @@ function millisecond(ms) {
   }
 }
 
+/* Exporting the function `millisecond` to be used in other files. */
 module.exports = millisecond

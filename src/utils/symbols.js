@@ -1,12 +1,12 @@
+/* It's a list of symbols. */
 /**
- * @description Returns a selected symbol
+ * @description It's a list of symbols.
  * @author Zastinian
  * @param {String} symbols.Symbol
  * @example
  * console.log(symbols.tick)
  * @returns {String} String
  */
-
 module.exports = {
   square: "█",
   squareDarkShade: "▓",

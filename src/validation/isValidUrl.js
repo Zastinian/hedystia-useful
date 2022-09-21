@@ -1,5 +1,10 @@
 /**
- * @description Check that the text is a link | Only texts with http: or https:
+ * It checks if the content is a valid URL by checking if it matches the pattern of a URL.
+ * @param content - The content to be validated.
+ * @returns A boolean value.
+ */
+/**
+ * @description It checks if the content is a valid URL by checking if it matches the pattern of a URL.
  * @author Zastinian
  * @param {String} content
  * @param {Array} whitelist
@@ -7,7 +12,6 @@
  * console.log(isValidUrl('https://google.com'))
  * @returns {Boolean} Boolean
  */
-
 function isValidUrl(content) {
   var pattern = new RegExp(
     "^(https?:\\/\\/)?" +
@@ -21,4 +25,5 @@ function isValidUrl(content) {
   return !!pattern.test(content)
 }
 
+/* Exporting the function to be used in other files. */
 module.exports = isValidUrl

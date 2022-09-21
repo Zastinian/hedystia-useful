@@ -1,5 +1,10 @@
 /**
- * @description Check what type is provided
+ * It returns the type of the object passed to it
+ * @param obj - The object to test
+ * @returns The type of the object.
+ */
+/**
+ * @description It returns the type of the object passed to it
  * @author Zastinian
  * @param {any} obj
  * @example
@@ -10,7 +15,6 @@
  * console.log(type('str'))
  * @returns {String} String
  */
-
 function type(obj) {
   var undef
   if (obj === undef) return "undefined"
@@ -53,4 +57,5 @@ function type(obj) {
   }
 }
 
+/* Exporting the function `type` as a module. */
 module.exports = type

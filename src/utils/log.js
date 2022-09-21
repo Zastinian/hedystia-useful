@@ -1,5 +1,11 @@
 /**
- * @description Make a log with or without color
+ * `If the color argument is passed, then log the text in that color, otherwise just log the text.`
+ * @param text - The text to be logged.
+ * @param color - The color of the text.
+ * @returns The function log is being returned.
+ */
+/**
+ * @description `If the color argument is passed, then log the text in that color, otherwise just log the text.`
  * @author Zastinian
  * @param {String} text
  * @param {String} color
@@ -8,7 +14,6 @@
  * log('Something', listLogColor.FgRed)
  * @returns {void} void
  */
-
 function log(text, color) {
   if (color) {
     return console.log(color, text)
@@ -17,4 +22,5 @@ function log(text, color) {
   }
 }
 
+/* Exporting the function log. */
 module.exports = log
