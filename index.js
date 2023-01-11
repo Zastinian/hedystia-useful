@@ -1,10 +1,4 @@
 /* It's exporting all the functions in the file. */
-exports.kiss = require("./src/img/interaction/kiss")
-exports.pat = require("./src/img/interaction/pat")
-exports.hug = require("./src/img/interaction/hug")
-exports.feed = require("./src/img/interaction/feed")
-exports.slap = require("./src/img/interaction/slap")
-
 exports.isValidNumber = require("./src/validation/isValidNumber")
 exports.isEmptyString = require("./src/validation/isEmptyString")
 exports.isValidUrl = require("./src/validation/isValidUrl")

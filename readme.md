@@ -12,24 +12,13 @@ yarn add esmile-useful
 
 ## Links
 
-- [Discord Esmile Hub](https://discord.gg/RcBY4fhn9y) [All esmile projects]
-- [Discord Esmile Useful](https://discord.gg/Hjeg6C2SAq) [Esmile Useful official server]
+- [Discord](https://discord.gg/aXvuUpvRQs) [Esmile Discord]
 
 ## Example
 
 <img src='https://cdn.discordapp.com/attachments/851919671878746112/1007663992338128956/2022-08-12_09-45-24.gif' alt='Esmile' />
 
 ## Sections
-
-### Images
-
-| Function | Description                    |
-| -------- | ------------------------------ |
-| `kiss`   | Gets a URL of a kiss image/gif |
-| `pat`    | Gets a URL of a pat image/gif  |
-| `hug`    | Gets a URL of a hug image/gif  |
-| `feed`   | Gets a URL of a feed image/gif |
-| `slap`   | Gets a URL of a slap image/gif |
 
 ### Validations
 

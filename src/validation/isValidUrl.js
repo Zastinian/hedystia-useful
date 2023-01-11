@@ -1,10 +1,5 @@
 /**
- * It checks if the content is a valid URL by checking if it matches the pattern of a URL.
- * @param content - The content to be validated.
- * @returns A boolean value.
- */
-/**
- * @description It checks if the content is a valid URL by checking if it matches the pattern of a URL.
+ * @description Check that the text is a link | Only texts with http: or https:
  * @author Zastinian
  * @param {String} content
  * @param {Array} whitelist
@@ -12,18 +7,15 @@
  * console.log(isValidUrl('https://google.com'))
  * @returns {Boolean} Boolean
  */
-function isValidUrl(content) {
-  var pattern = new RegExp(
-    "^(https?:\\/\\/)?" +
-      "((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|" +
-      "((\\d{1,3}\\.){3}\\d{1,3}))" +
-      "(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*" +
-      "(\\?[;&a-z\\d%_.~+=-]*)?" +
-      "(\\#[-a-z\\d_]*)?$",
-    "i"
-  )
-  return !!pattern.test(content)
+
+function isValidUrl(content, whitelist = []) {
+  let regex =
+    /(?:(?:https?|ftp|file|http?):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#\/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[A-Z0-9+&@#\/%=~_|$])/gim
+  const match = regex.test(content)
+  let urls = content.match(regex)
+  urls = urls.filter((url) => !whitelist.find((wurl) => url.includes(wurl)))
+  if (urls.length === 0) return false
+  return match
 }
 
-/* Exporting the function to be used in other files. */
 module.exports = isValidUrl
