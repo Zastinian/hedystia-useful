@@ -12,8 +12,7 @@ yarn add esmile-useful
 
 ## Links
 
-- [Discord Esmile Hub](https://discord.gg/RcBY4fhn9y) [All esmile projects]
-- [Discord Esmile Useful](https://discord.gg/Hjeg6C2SAq) [Esmile Useful official server]
+- [Discord](https://discord.gg/aXvuUpvRQs) [Esmile Discord]
 
 ## Example
 
