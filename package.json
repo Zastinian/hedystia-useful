@@ -1,6 +1,6 @@
 {
   "name": "esmile-useful",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "Esmile Utility",
   "main": "index.js",
   "keywords": [
@@ -20,9 +20,6 @@
   ],
   "author": "zastinian@gmail.com",
   "license": "Copyright",
-  "dependencies": {
-    "node-fetch": "^3.2.10"
-  },
   "engines": {
     "node": ">=16.9.0"
   },

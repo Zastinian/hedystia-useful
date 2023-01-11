@@ -21,16 +21,6 @@ yarn add esmile-useful
 
 ## Sections
 
-### Images
-
-| Function | Description                    |
-| -------- | ------------------------------ |
-| `kiss`   | Gets a URL of a kiss image/gif |
-| `pat`    | Gets a URL of a pat image/gif  |
-| `hug`    | Gets a URL of a hug image/gif  |
-| `feed`   | Gets a URL of a feed image/gif |
-| `slap`   | Gets a URL of a slap image/gif |
-
 ### Validations
 
 | Function        | Description                    |
