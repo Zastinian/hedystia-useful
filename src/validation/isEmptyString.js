@@ -8,7 +8,7 @@
  */
 
 function isEmptyString(value) {
-  return value === ""
+  return value === "";
 }
 
-module.exports = isEmptyString
+module.exports = isEmptyString;

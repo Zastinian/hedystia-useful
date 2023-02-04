@@ -1,3 +1,3 @@
-const isValidUrl = require("../src/validation/isValidUrl")
+const isValidUrl = require("../src/validation/isValidUrl");
 
-console.log(isValidUrl("esmile"))
+console.log(isValidUrl("esmile"));

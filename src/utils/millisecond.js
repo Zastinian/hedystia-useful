@@ -16,11 +16,11 @@
 function millisecond(ms) {
   var type = typeof ms,
     amount,
-    match
+    match;
 
-  if ("number" === type) return ms
-  if ("string" !== type) return 0
-  if (!isNaN(+ms)) return +ms
+  if ("number" === type) return ms;
+  if ("string" !== type) return 0;
+  if (!isNaN(+ms)) return +ms;
 
   var regex = new RegExp(
     "^((?:\\d+)?\\.?\\d+) *(" +
@@ -48,18 +48,18 @@ function millisecond(ms) {
       ].join("|") +
       ")?$",
     "i"
-  )
+  );
 
-  if (ms.length > 10000 || !(match = regex.exec(ms))) return 0
+  if (ms.length > 10000 || !(match = regex.exec(ms))) return 0;
 
-  amount = parseFloat(match[1])
+  amount = parseFloat(match[1]);
 
   var second = 1000,
     minute = second * 60,
     hour = minute * 60,
     day = hour * 24,
     week = day * 7,
-    year = day * 365
+    year = day * 365;
 
   switch (match[2].toLowerCase()) {
     case "years":
@@ -67,44 +67,44 @@ function millisecond(ms) {
     case "yrs":
     case "yr":
     case "y":
-      return amount * year
+      return amount * year;
 
     case "weeks":
     case "week":
     case "wks":
     case "wk":
     case "w":
-      return amount * week
+      return amount * week;
 
     case "days":
     case "day":
     case "d":
-      return amount * day
+      return amount * day;
 
     case "hours":
     case "hour":
     case "hrs":
     case "hr":
     case "h":
-      return amount * hour
+      return amount * hour;
 
     case "minutes":
     case "minute":
     case "mins":
     case "min":
     case "m":
-      return amount * minute
+      return amount * minute;
 
     case "seconds":
     case "second":
     case "secs":
     case "sec":
     case "s":
-      return amount * second
+      return amount * second;
 
     default:
-      return amount
+      return amount;
   }
 }
 
-module.exports = millisecond
+module.exports = millisecond;

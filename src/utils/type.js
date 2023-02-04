@@ -12,45 +12,45 @@
  */
 
 function type(obj) {
-  var undef
-  if (obj === undef) return "undefined"
-  if (obj === null) return "null"
+  var undef;
+  if (obj === undef) return "undefined";
+  if (obj === null) return "null";
 
-  var t = typeof obj
+  var t = typeof obj;
 
   switch (t) {
     case "boolean":
     case "number":
     case "string":
     case "function":
-      return t
+      return t;
   }
 
-  var toString = Object.prototype.toString
+  var toString = Object.prototype.toString;
 
-  var str = toString.call(obj)
+  var str = toString.call(obj);
 
   switch (str) {
     case "[object Array]":
-      return "array"
+      return "array";
     case "[object RegExp]":
-      return "regexp"
+      return "regexp";
     case "[object Date]":
-      return "date"
+      return "date";
     case "[object Arguments]":
-      return "arguments"
+      return "arguments";
     case "[object Function]":
-      return "function"
+      return "function";
     case "[object Boolean]":
-      return "boolean"
+      return "boolean";
     case "[object Number]":
-      return "number"
+      return "number";
     case "[object String]":
-      return "string"
+      return "string";
     default:
-      if (isBuffer(obj)) return "buffer"
-      return "object"
+      if (isBuffer(obj)) return "buffer";
+      return "object";
   }
 }
 
-module.exports = type
+module.exports = type;

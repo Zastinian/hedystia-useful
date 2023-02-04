@@ -8,7 +8,7 @@
  */
 
 function randomItem(items) {
-  return items[Math.floor(Math.random() * items.length)]
+  return items[Math.floor(Math.random() * items.length)];
 }
 
-module.exports = randomItem
+module.exports = randomItem;
