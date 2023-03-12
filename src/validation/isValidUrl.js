@@ -10,12 +10,12 @@
 
 function isValidUrl(content, whitelist = []) {
   let regex =
-    /(?:(?:https?|ftp|file|http?):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#\/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[A-Z0-9+&@#\/%=~_|$])/gim
-  const match = regex.test(content)
-  let urls = content.match(regex)
-  urls = urls.filter((url) => !whitelist.find((wurl) => url.includes(wurl)))
-  if (urls.length === 0) return false
-  return match
+    /(?:(?:https?|ftp|file|http?):\/\/|www\.|ftp\.)(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[-A-Z0-9+&@#\/%=~_|$?!:,.])*(?:\([-A-Z0-9+&@#\/%=~_|$?!:,.]*\)|[A-Z0-9+&@#\/%=~_|$])/gim;
+  const match = regex.test(content);
+  let urls = content.match(regex);
+  urls = urls.filter((url) => !whitelist.find((wurl) => url.includes(wurl)));
+  if (urls.length === 0) return false;
+  return match;
 }
 
-module.exports = isValidUrl
+module.exports = isValidUrl;

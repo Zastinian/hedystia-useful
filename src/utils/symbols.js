@@ -234,4 +234,4 @@ module.exports = {
   oneSeventh: "⅐",
   oneNinth: "⅑",
   oneTenth: "⅒",
-}
+};

@@ -9,11 +9,11 @@
 function generateCaptcha(captchaLength) {
   var captcha = "",
     alphabets = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(""),
-    captchaLength = captchaLength || 5
+    captchaLength = captchaLength || 5;
   for (var i = 0; i < captchaLength; i++) {
-    captcha = captcha + alphabets[Math.ceil(Math.random() * 25)]
+    captcha = captcha + alphabets[Math.ceil(Math.random() * 25)];
   }
-  return captcha
+  return captcha;
 }
 
-module.exports = generateCaptcha
+module.exports = generateCaptcha;

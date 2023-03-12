@@ -1309,4 +1309,4 @@ module.exports = {
   Zaffre: "0x0014A8",
   ZinnwalditeBrown: "0x2C1608",
   Zomp: "0x39A78E",
-}
+};

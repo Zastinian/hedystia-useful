@@ -30,4 +30,4 @@ module.exports = {
   BgMagenta: "\x1b[45m%s\x1b[0m",
   BgCyan: "\x1b[46m%s\x1b[0m",
   BgWhite: "\x1b[47m%s\x1b[0m",
-}
+};

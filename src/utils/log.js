@@ -11,10 +11,10 @@
 
 function log(text, color) {
   if (color) {
-    return console.log(color, text)
+    return console.log(color, text);
   } else {
-    return console.log(text)
+    return console.log(text);
   }
 }
 
-module.exports = log
+module.exports = log;
