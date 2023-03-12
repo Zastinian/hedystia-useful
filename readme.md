@@ -48,6 +48,7 @@ yarn add esmile-useful
 
 | Function      | Description                                 |
 | ------------- | ------------------------------------------- |
+| `formats`     | Different types of text and number formats  |
 | `millisecond` | Converts the indicated time to milliseconds |
 | `wait`        | Execute the code after a while              |
 | `log`         | Make a log with or without color            |
