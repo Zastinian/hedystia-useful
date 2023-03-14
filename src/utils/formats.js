@@ -114,7 +114,6 @@ function DateFor(date, order = "dmy") {
   return formattedDate;
 }
 
-/* Exporting the functions to be used in other files. */
 module.exports = {
   Number,
   TitleCase,
