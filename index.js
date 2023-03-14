@@ -6,6 +6,7 @@ exports.isValidEmail = require("./src/validation/isValidEmail");
 
 exports.generateCaptcha = require("./src/gen/generateCaptcha");
 exports.generateKey = require("./src/gen/generateKey");
+exports.generatePassword = require("./src/gen/generatePassword");
 
 exports.colorHashtag = require("./src/color/colorHashtag");
 exports.colorZero = require("./src/color/colorZero");

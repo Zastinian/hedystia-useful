@@ -1,2 +1,2 @@
-const {formats} = require("..");
-console.log(formats.DateFor(new Date(), "dmy"));
+const {generatePassword} = require("..");
+console.log(generatePassword(10));
