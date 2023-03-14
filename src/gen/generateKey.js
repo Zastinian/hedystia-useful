@@ -1,10 +1,10 @@
 /**
- * @description Generate a key
+ * @description Generates a unique key with the specified prefix.
  * @author Zastinian
- * @param {String} prefix
+ * @param {string} [prefix] - The prefix to use for the key (defaults to "PREFIX").
  * @example
  * console.log(generateKey('PREFIX'))
- * @returns {String} String
+ * @returns {string} The generated key.
  */
 function generateKey(prefix) {
   if (!prefix) {

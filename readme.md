@@ -31,10 +31,11 @@ yarn add esmile-useful
 
 ### Generators
 
-| Function          | Description        |
-| ----------------- | ------------------ |
-| `generateCaptcha` | Generate a captcha |
-| `generateKey`     | Generate a key     |
+| Function           | Description                                                 |
+| ------------------ | ----------------------------------------------------------- |
+| `generateCaptcha`  | Generates a random captcha string with the specified length |
+| `generateKey`      | Generates a unique key with the specified prefix            |
+| `generatePassword` | Generates a random password of the specified length         |
 
 ### Colors
 

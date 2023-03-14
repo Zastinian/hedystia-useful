@@ -1,5 +1,6 @@
 /**
- * Formats a number to a string with thousand separators.
+ * @description Formats a number to a string with thousand separators.
+ * @author Zastinian
  * @param {number} number - The number to format.
  * @example
  * console.log(formats.Number(10000))
@@ -10,7 +11,8 @@ function Number(number) {
 }
 
 /**
- * Formats a string to title case.
+ * @description Formats a string to title case.
+ * @author Zastinian
  * @param {string} str - The string to format.
  * console.log(formats.TitleCase("Example of text"))
  * @returns {string} The formatted string.
@@ -26,7 +28,8 @@ function TitleCase(str) {
 }
 
 /**
- * Formats a string to sentence case.
+ * @description Formats a string to sentence case.
+ * @author Zastinian
  * @param {string} str - The string to format.
  * console.log(formats.SentenceCase("Example Of Text"))
  * @returns {string} The formatted string.
@@ -38,7 +41,8 @@ function SentenceCase(str) {
 }
 
 /**
- * Formats a string to camel case.
+ * @description Formats a string to camel case.
+ * @author Zastinian
  * @param {string} str - The string to format.
  * console.log(formats.CamelCase("Example of text"))
  * @returns {string} The formatted string.
@@ -52,7 +56,8 @@ function CamelCase(str) {
 }
 
 /**
- * Formats a string to kebab case.
+ * @description Formats a string to kebab case.
+ * @author Zastinian
  * @param {string} str - The string to format.
  * console.log(formats.KebabCase("Example of text"))
  * @returns {string} The formatted string.
@@ -62,7 +67,8 @@ function KebabCase(str) {
 }
 
 /**
- * Formats a string to snake case.
+ * @description Formats a string to snake case.
+ * @author Zastinian
  * @param {string} str - The string to format.
  * console.log(formats.SnakeCase("Example of text"))
  * @returns {string} The formatted string.
@@ -72,7 +78,8 @@ function SnakeCase(str) {
 }
 
 /**
- * Formats a date as a string with a customizable order of day, month and year.
+ * @description Formats a date as a string with a customizable order of day, month and year.
+ * @author Zastinian
  * @param {Date} date - The date to format.
  * @param {string} [order="dmy"] - The order in which to display the day, month and year.
  *                                 Can be "dmy", "mdy", "ymd", "ydm", "myd" or "dym".
