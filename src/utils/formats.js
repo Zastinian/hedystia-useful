@@ -71,6 +71,49 @@ function SnakeCase(str) {
   return str.replace(/\s+/g, "_").toLowerCase();
 }
 
+/**
+ * Formats a date as a string with a customizable order of day, month and year.
+ * @param {Date} date - The date to format.
+ * @param {string} [order="dmy"] - The order in which to display the day, month and year.
+ *                                 Can be "dmy", "mdy", "ymd", "ydm", "myd" or "dym".
+ * @example
+ * console.log(formats.DateFor(new Date(), "dmy"))
+ * console.log(formats.DateFor(new Date(), "mdy"))
+ * console.log(formats.DateFor(new Date(), "ymd"))
+ * console.log(formats.DateFor(new Date(), "ydm"))
+ * console.log(formats.DateFor(new Date(), "myd"))
+ * console.log(formats.DateFor(new Date(), "dym"))
+ * @returns {string} A string representation of the date.
+ */
+function DateFor(date, order = "dmy") {
+  const day = date.getDate().toString().padStart(2, "0");
+  const month = (date.getMonth() + 1).toString().padStart(2, "0");
+  const year = date.getFullYear();
+  let formattedDate;
+
+  switch (order) {
+    case "mdy":
+      formattedDate = `${month}/${day}/${year}`;
+      break;
+    case "ymd":
+      formattedDate = `${year}/${month}/${day}`;
+      break;
+    case "ydm":
+      formattedDate = `${year}/${day}/${month}`;
+      break;
+    case "myd":
+      formattedDate = `${month}/${year}/${day}`;
+      break;
+    case "dym":
+      formattedDate = `${day}/${year}/${month}`;
+      break;
+    default:
+      formattedDate = `${day}/${month}/${year}`;
+  }
+
+  return formattedDate;
+}
+
 /* Exporting the functions to be used in other files. */
 module.exports = {
   Number,
@@ -79,4 +122,5 @@ module.exports = {
   CamelCase,
   KebabCase,
   SnakeCase,
+  DateFor,
 };

@@ -46,13 +46,20 @@ yarn add esmile-useful
 
 ### Utils
 
-| Function      | Description                                 |
-| ------------- | ------------------------------------------- |
-| `formats`     | Different types of text and number formats  |
-| `millisecond` | Converts the indicated time to milliseconds |
-| `wait`        | Execute the code after a while              |
-| `log`         | Make a log with or without color            |
-| `type`        | Check what type is provided                 |
-| `random`      | Get a random number between 2 numbers       |
-| `randomItem`  | Get a random element from an array          |
-| `symbols`     | Returns a selected symbol                   |
+| Function                               | Description                                                                 |
+| -------------------------------------- | --------------------------------------------------------------------------- |
+| `formats`                              | Different types of text and number formats                                  |
+| &nbsp;&nbsp;&nbsp;&nbsp;`Number`       | Formats a number to a string with thousand separators                       |
+| &nbsp;&nbsp;&nbsp;&nbsp;`TitleCase`    | Formats a string to title case                                              |
+| &nbsp;&nbsp;&nbsp;&nbsp;`SentenceCase` | Formats a string to sentence case                                           |
+| &nbsp;&nbsp;&nbsp;&nbsp;`CamelCase`    | Formats a string to camel case                                              |
+| &nbsp;&nbsp;&nbsp;&nbsp;`KebabCase`    | Formats a string to kebab case                                              |
+| &nbsp;&nbsp;&nbsp;&nbsp;`SnakeCase`    | Formats a string to snake case                                              |
+| &nbsp;&nbsp;&nbsp;&nbsp;`DateFor`      | Formats a date as a string with a customizable order of day, month and year |
+| `millisecond`                          | Converts the indicated time to milliseconds                                 |
+| `wait`                                 | Execute the code after a while                                              |
+| `log`                                  | Make a log with or without color                                            |
+| `type`                                 | Check what type is provided                                                 |
+| `random`                               | Get a random number between 2 numbers                                       |
+| `randomItem`                           | Get a random element from an array                                          |
+| `symbols`                              | Returns a selected symbol                                                   |

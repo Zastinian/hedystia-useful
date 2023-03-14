@@ -1,2 +1,2 @@
 const {formats} = require("..");
-console.log(formats.SnakeCase("Example of text"));
+console.log(formats.DateFor(new Date(), "dmy"));
