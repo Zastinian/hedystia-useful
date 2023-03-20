@@ -1,6 +1,5 @@
 /**
- * @description Generates a random password of the specified length.
- * @author Zastinian
+ * Generates a random password of the specified length.
  * @param {number} [length=10] - The length of the password to generate.
  * @example
  * console.log(generatePassword(10))

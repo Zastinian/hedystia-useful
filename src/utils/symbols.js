@@ -1,12 +1,11 @@
 /**
- * @description Returns a selected symbol
- * @author Zastinian
+ * Returns a selected symbol
+ * @module colorZero
  * @param {String} symbols.Symbol
  * @example
  * console.log(symbols.tick)
  * @returns {String} String
  */
-
 module.exports = {
   square: "█",
   squareDarkShade: "▓",

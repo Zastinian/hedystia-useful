@@ -1,6 +1,5 @@
 /**
- * @description Get a random number between 2 numbers
- * @author Zastinian
+ * Get a random number between 2 numbers
  * @param {Number} min
  * @param {Number} max
  * @example

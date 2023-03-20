@@ -13,6 +13,7 @@ yarn add esmile-useful
 ## Links
 
 - [Discord](https://discord.gg/aXvuUpvRQs) [Esmile Discord]
+- [Docs](https://docs.mresmile.com/docs/useful/start)
 
 ## Example
 

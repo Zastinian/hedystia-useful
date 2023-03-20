@@ -1,6 +1,6 @@
 /**
- * @description Contains all hex colors starting with #
- * @author Zastinian
+ * Contains all hex colors starting with #
+ * @module colorHashtag
  * @param {String} colorHashtag.Color
  * @example
  * console.log(colorHashtag.Red)

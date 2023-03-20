@@ -1,6 +1,6 @@
 /**
- * @description Contains the colors for the log section
- * @author Zastinian
+ * Contains the colors for the log section
+ * @module listLogColor
  * @param {String} listLogColor.Color
  * @example
  * log('Something', listLogColor.FgRed)

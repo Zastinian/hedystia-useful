@@ -1,6 +1,5 @@
 /**
- * @description Get a random element from an array
- * @author Zastinian
+ * Get a random element from an array
  * @param {Array} items
  * @example
  * console.log(randomItem(['a', 'b', 'c']))

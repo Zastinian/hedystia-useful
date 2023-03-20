@@ -1,6 +1,5 @@
 /**
- * @description Make a log with or without color
- * @author Zastinian
+ * Make a log with or without color
  * @param {String} text
  * @param {String} color
  * @example

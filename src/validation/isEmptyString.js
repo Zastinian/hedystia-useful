@@ -1,6 +1,5 @@
 /**
- * @description Check if the text is not empty
- * @author Zastinian
+ * Check if the text is not empty
  * @param {String} value
  * @example
  * console.log(isEmptyString('Something'))

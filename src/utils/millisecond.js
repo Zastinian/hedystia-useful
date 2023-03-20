@@ -1,6 +1,5 @@
 /**
- * @description Converts the indicated time to milliseconds
- * @author Zastinian
+ * Converts the indicated time to milliseconds
  * @param {String} ms
  * @example
  * console.log(millisecond('1000 ms'))

@@ -1,6 +1,5 @@
 /**
- * @description Check if it is a email
- * @author Zastinian
+ * Check if it is a email
  * @param {String} email
  * @example
  * console.log(isValidEmail('test@email.com'))

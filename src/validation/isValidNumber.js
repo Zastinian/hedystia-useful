@@ -1,6 +1,5 @@
 /**
- * @description Check if it is a number
- * @author Zastinian
+ * Check if it is a number
  * @param {Number} number
  * @example
  * console.log(isValidNumber(number))

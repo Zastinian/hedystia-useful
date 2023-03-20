@@ -1,6 +1,5 @@
 /**
- * @description Check what type is provided
- * @author Zastinian
+ * Check what type is provided
  * @param {any} obj
  * @example
  * console.log(type(null))

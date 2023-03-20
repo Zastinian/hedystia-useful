@@ -1,6 +1,5 @@
 /**
- * @description Generates a random captcha string with the specified length.
- * @author Zastinian
+ * Generates a random captcha string with the specified length.
  * @param {number} [captchaLength=5] - The length of the captcha string to generate (defaults to 5).
  * @example
  * console.log(generateCaptcha(number))

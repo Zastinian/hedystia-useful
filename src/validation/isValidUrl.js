@@ -1,6 +1,5 @@
 /**
- * @description Check that the text is a link | Only texts with http: or https:
- * @author Zastinian
+ * Check that the text is a link | Only texts with http: or https:
  * @param {String} content
  * @param {Array} whitelist
  * @example

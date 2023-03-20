@@ -1,6 +1,6 @@
 /**
- * @description Contains all hex colors starting with 0x
- * @author Zastinian
+ * Contains all hex colors starting with 0x
+ * @module colorZero
  * @param {String} colorZero.Color
  * @example
  * console.log(colorZero.Red)
