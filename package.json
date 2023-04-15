@@ -1,7 +1,7 @@
 {
-  "name": "esmile-useful",
+  "name": "hedystia-useful",
   "version": "0.2.0",
-  "description": "Esmile Utility",
+  "description": "Hedystia Utility",
   "main": "index.js",
   "keywords": [
     "images",
@@ -25,10 +25,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Zastinian/esmile-useful.git"
+    "url": "git+https://github.com/Zastinian/hedystia-useful.git"
   },
   "bugs": {
-    "url": "https://github.com/Zastinian/esmile-useful/issues"
+    "url": "https://github.com/Zastinian/hedystia-useful/issues"
   },
-  "homepage": "https://github.com/Zastinian/esmile-useful#readme"
+  "homepage": "https://github.com/Zastinian/hedystia-useful#readme"
 }
