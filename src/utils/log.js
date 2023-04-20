@@ -4,7 +4,7 @@
  * @param {String} color
  * @example
  * log('Something')
- * log('Something', listLogColor.FgRed)
+ * log('Something', logColor.FgRed)
  * @returns {void} void
  */
 

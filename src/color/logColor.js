@@ -1,10 +1,9 @@
 /**
  * Contains the colors for the log section
- * @module listLogColor
- * @param {String} listLogColor.Color
- * @deprecated Use logColor
+ * @module logColor
+ * @param {String} logColor.Color
  * @example
- * log('Something', listLogColor.FgRed)
+ * log('Something', logColor.FgRed)
  * @returns {String} String
  */
 module.exports = {

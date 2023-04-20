@@ -11,6 +11,7 @@ exports.generatePassword = require("./src/gen/generatePassword");
 exports.colorHashtag = require("./src/color/colorHashtag");
 exports.colorZero = require("./src/color/colorZero");
 exports.listLogColor = require("./src/color/listLogColor");
+exports.logColor = require("./src/color/logColor");
 
 exports.formats = require("./src/utils/formats");
 exports.millisecond = require("./src/utils/millisecond");

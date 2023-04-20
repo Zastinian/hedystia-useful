@@ -40,11 +40,12 @@ yarn add hedystia-useful
 
 ### Colors
 
-| Function       | Description                              |
-| -------------- | ---------------------------------------- |
-| `colorHashtag` | Contains all hex colors starting with #  |
-| `colorZero`    | Contains all hex colors starting with 0x |
-| `listLogColor` | Contains the colors for the log section  |
+| Function                    | Description                              |
+| --------------------------- | ---------------------------------------- |
+| `colorHashtag`              | Contains all hex colors starting with #  |
+| `colorZero`                 | Contains all hex colors starting with 0x |
+| `listLogColor (deprecated)` | Contains the colors for the log section  |
+| `logColor`                  | Contains the colors for the log section  |
 
 ### Utils
 
