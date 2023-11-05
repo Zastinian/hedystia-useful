@@ -13,7 +13,7 @@ yarn add hedystia-useful
 ## Links
 
 - [Discord](https://discord.gg/aXvuUpvRQs) [Hedystia Discord]
-- [Docs](https://docs.hedystia.com/docs/useful/start)
+- [Docs](https://docs.hedystia.com/useful/start/)
 
 ## Example
 
