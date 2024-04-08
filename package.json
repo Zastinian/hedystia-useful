@@ -1,5 +1,5 @@
 {
-  "name": "hedystia-useful",
+  "name": "@hedystia/useful",
   "version": "0.2.2",
   "description": "Hedystia Utility",
   "main": "index.js",
@@ -31,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/Zastinian/hedystia-useful/issues"
   },
-  "homepage": "https://github.com/Zastinian/hedystia-useful#readme"
+  "homepage": "https://docs.hedystia.com/useful/start",
+  "publishConfig": {
+    "access": "public"
+  }
 }

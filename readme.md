@@ -1,9 +1,9 @@
 ## Installation
 
 ```
-npm i hedystia-useful
+npm i @hedystia/useful
 
-yarn add hedystia-useful
+yarn add @hedystia/useful
 ```
 
 ## Nodejs Version
@@ -13,7 +13,7 @@ yarn add hedystia-useful
 ## Links
 
 - [Discord](https://discord.gg/aXvuUpvRQs) [Hedystia Discord]
-- [Docs](https://docs.hedystia.com/useful/start/)
+- [Docs](https://docs.hedystia.com/useful/start)
 
 ## Example
 
