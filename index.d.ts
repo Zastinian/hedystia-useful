@@ -1,41 +1,41 @@
 /**
  * Contains all hex colors starting with #
  * @module colorHashtag
- * @param {String} colorHashtag.Color
+ * @param {string} colorHashtag.Color
  * @example
  * console.log(colorHashtag.Red)
- * @returns {String} String
+ * @returns {string} String
  */
 module colorHashtag {}
 
 /**
  * Contains all hex colors starting with 0x
  * @module colorZero
- * @param {String} colorZero.Color
+ * @param {string} colorZero.Color
  * @example
  * console.log(colorZero.Red)
- * @returns {String} String
+ * @returns {string} String
  */
 module colorZero {}
 
 /**
  * Contains the colors for the log section
  * @module listLogColor
- * @param {String} listLogColor.Color
+ * @param {string} listLogColor.Color
  * @deprecated Use logColor
  * @example
  * log('Something', listLogColor.FgRed)
- * @returns {String} String
+ * @returns {string} String
  */
 module listLogColor {}
 
 /**
  * Contains the colors for the log section
  * @module logColor
- * @param {String} logColor.Color
+ * @param {string} logColor.Color
  * @example
  * log('Something', logColor.FgRed)
- * @returns {String} String
+ * @returns {string} String
  */
 module logColor {}
 
@@ -44,9 +44,9 @@ module logColor {}
  * @param {number} [captchaLength=5] - The length of the captcha string to generate (defaults to 5).
  * @example
  * console.log(generateCaptcha(number))
- * @returns {String} The generated captcha string.
+ * @returns {string} The generated captcha string.
  */
-export function generateCaptcha(captchaLength?: number): String;
+export function generateCaptcha(captchaLength?: number): string;
 
 /**
  * Generates a unique key with the specified prefix.
@@ -58,13 +58,55 @@ export function generateCaptcha(captchaLength?: number): String;
 export function generateKey(prefix?: string): string;
 
 /**
- * Generates a random password of the specified length.
+ * Generates a random password of the specified length using specified character sets.
  * @param {number} [length=10] - The length of the password to generate.
+ * @param {Object} [options] - Options to specify character sets and their required usage.
+ * @param {Object} [options.special] - Include special characters with times to force.
+ * @param {Object} [options.chinese] - Include Chinese characters with times to force.
+ * @param {Object} [options.japanese] - Include Japanese characters with times to force.
+ * @param {Object} [options.arabic] - Include Arabic characters with times to force.
+ * @param {Object} [options.rongoRongo] - Include Rongo Rongo characters with times to force.
+ * @param {Object} [options.cyrillic] - Include Cyrillic characters with times to force.
+ * @param {Object} [options.greek] - Include Greek characters with times to force.
+ * @param {Object} [options.hebrew] - Include Hebrew characters with times to force.
  * @example
- * console.log(generatePassword(10))
+ * console.log(generatePassword(10, { chinese: { active: true, times: 2 }, japanese: { active: true, times: 1 } }))
  * @returns {string} The generated password.
  */
-export function generatePassword(length?: number): string;
+export function generatePassword(length?: number, options?: {
+    special?: {
+        active?: boolean;
+        times?: number;
+    };
+    chinese?: {
+        active?: boolean;
+        times?: number;
+    };
+    japanese?: {
+        active?: boolean;
+        times?: number;
+    };
+    arabic?: {
+        active?: boolean;
+        times?: number;
+    };
+    rongoRongo?: {
+        active?: boolean;
+        times?: number;
+    };
+    cyrillic?: {
+        active?: boolean;
+        times?: number;
+    };
+    greek?: {
+        active?: boolean;
+        times?: number;
+    };
+    hebrew?: {
+        active?: boolean;
+        times?: number;
+    };
+}): string;
 
 /**
  * Formats a number to a string with thousand separators.
@@ -133,18 +175,18 @@ export function DateFor(date: Date, order?: string): string;
 
 /**
  * Make a log with or without color
- * @param {String} text
- * @param {String} color
+ * @param {string} text
+ * @param {string} color
  * @example
  * log('Something')
  * log('Something', logColor.FgRed)
  * @returns {void} void
  */
-export function log(text: String, color: String): void;
+export function log(text: string, color: string): void;
 
 /**
  * Converts the indicated time to milliseconds
- * @param {String} ms
+ * @param {string} ms
  * @example
  * console.log(millisecond('1000 ms'))
  * console.log(millisecond('1 s'))
@@ -153,36 +195,36 @@ export function log(text: String, color: String): void;
  * console.log(millisecond('1 d'))
  * console.log(millisecond('1 w'))
  * console.log(millisecond('1 y'))
- * @returns {Number} Number
+ * @returns {number} Number
  */
-export function millisecond(ms: String): Number;
+export function millisecond(ms: string): number;
 
 /**
  * Get a random number between 2 numbers
- * @param {Number} min
- * @param {Number} max
+ * @param {number} min
+ * @param {number} max
  * @example
  * console.log(random(1, 10))
- * @returns {Number} Number
+ * @returns {number} Number
  */
-export function random(min: Number, max: Number): Number;
+export function random(min: number, max: number): number;
 
 /**
  * Get a random element from an array
  * @param {Array} items
  * @example
  * console.log(randomItem(['a', 'b', 'c']))
- * @returns {String} String
+ * @returns {string} String
  */
-export function randomItem(items: Array): String;
+export function randomItem(items: Array): string;
 
 /**
  * Returns a selected symbol
  * @module colorZero
- * @param {String} symbols.Symbol
+ * @param {string} symbols.Symbol
  * @example
  * console.log(symbols.tick)
- * @returns {String} String
+ * @returns {string} String
  */
 module colorZero {}
 
@@ -195,9 +237,9 @@ module colorZero {}
  * console.log(type(5))
  * console.log(type(true))
  * console.log(type('str'))
- * @returns {String} String
+ * @returns {string} String
  */
-export function type(obj: any): String;
+export function type(obj: any): string;
 
 /**
  * A function that returns a promise that resolves after a specified delay.
@@ -215,37 +257,37 @@ module wait {}
 
 /**
  * Check if the text is not empty
- * @param {String} value
+ * @param {string} value
  * @example
  * console.log(isEmptyString('Something'))
- * @returns {Boolean} Boolean
+ * @returns {boolean} Boolean
  */
-export function isEmptyString(value: String): Boolean;
+export function isEmptyString(value: string): boolean;
 
 /**
  * Check if it is a email
- * @param {String} email
+ * @param {string} email
  * @example
  * console.log(isValidEmail('test@email.com'))
- * @returns {Boolean} Boolean
+ * @returns {boolean} Boolean
  */
-export function isValidEmail(email: String): Boolean;
+export function isValidEmail(email: string): boolean;
 
 /**
  * Check if it is a number
- * @param {Number} number
+ * @param {number} number
  * @example
  * console.log(isValidNumber(number))
- * @returns {Boolean} Boolean
+ * @returns {boolean} Boolean
  */
-export function isValidNumber(number: Number): Boolean;
+export function isValidNumber(number: number): boolean;
 
 /**
  * Check that the text is a link | Only texts with http: or https:
- * @param {String} content
+ * @param {string} content
  * @param {Array} whitelist
  * @example
  * console.log(isValidUrl('https://google.com'))
- * @returns {Boolean} Boolean
+ * @returns {boolean} Boolean
  */
-export function isValidUrl(content: String, whitelist: Array): Boolean;
+export function isValidUrl(content: string, whitelist: Array): boolean;

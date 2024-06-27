@@ -6,7 +6,7 @@
  * @returns {string} The formatted string.
  */
 function Number(number) {
-  return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 /**
@@ -16,13 +16,11 @@ function Number(number) {
  * @returns {string} The formatted string.
  */
 function TitleCase(str) {
-  return str
-    .toLowerCase()
-    .split(" ")
-    .map(function (word) {
-      return word.charAt(0).toUpperCase() + word.slice(1);
-    })
-    .join(" ");
+	return str
+		.toLowerCase()
+		.split(" ")
+		.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+		.join(" ");
 }
 
 /**
@@ -32,9 +30,9 @@ function TitleCase(str) {
  * @returns {string} The formatted string.
  */
 function SentenceCase(str) {
-  return str.toLowerCase().replace(/(^\s*\w|[\.\?!]\s*\w)/g, function (c) {
-    return c.toUpperCase();
-  });
+	return str
+		.toLowerCase()
+		.replace(/(^\s*\w|[\.\?!]\s*\w)/g, (c) => c.toUpperCase());
 }
 
 /**
@@ -44,11 +42,11 @@ function SentenceCase(str) {
  * @returns {string} The formatted string.
  */
 function CamelCase(str) {
-  return str
-    .replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
-      return index === 0 ? word.toLowerCase() : word.toUpperCase();
-    })
-    .replace(/\s+/g, "");
+	return str
+		.replace(/(?:^\w|[A-Z]|\b\w)/g, (word, index) =>
+			index === 0 ? word.toLowerCase() : word.toUpperCase(),
+		)
+		.replace(/\s+/g, "");
 }
 
 /**
@@ -58,7 +56,7 @@ function CamelCase(str) {
  * @returns {string} The formatted string.
  */
 function KebabCase(str) {
-  return str.replace(/\s+/g, "-").toLowerCase();
+	return str.replace(/\s+/g, "-").toLowerCase();
 }
 
 /**
@@ -68,7 +66,7 @@ function KebabCase(str) {
  * @returns {string} The formatted string.
  */
 function SnakeCase(str) {
-  return str.replace(/\s+/g, "_").toLowerCase();
+	return str.replace(/\s+/g, "_").toLowerCase();
 }
 
 /**
@@ -86,40 +84,40 @@ function SnakeCase(str) {
  * @returns {string} A string representation of the date.
  */
 function DateFor(date, order = "dmy") {
-  const day = date.getDate().toString().padStart(2, "0");
-  const month = (date.getMonth() + 1).toString().padStart(2, "0");
-  const year = date.getFullYear();
-  let formattedDate;
+	const day = date.getDate().toString().padStart(2, "0");
+	const month = (date.getMonth() + 1).toString().padStart(2, "0");
+	const year = date.getFullYear();
+	let formattedDate;
 
-  switch (order) {
-    case "mdy":
-      formattedDate = `${month}/${day}/${year}`;
-      break;
-    case "ymd":
-      formattedDate = `${year}/${month}/${day}`;
-      break;
-    case "ydm":
-      formattedDate = `${year}/${day}/${month}`;
-      break;
-    case "myd":
-      formattedDate = `${month}/${year}/${day}`;
-      break;
-    case "dym":
-      formattedDate = `${day}/${year}/${month}`;
-      break;
-    default:
-      formattedDate = `${day}/${month}/${year}`;
-  }
+	switch (order) {
+		case "mdy":
+			formattedDate = `${month}/${day}/${year}`;
+			break;
+		case "ymd":
+			formattedDate = `${year}/${month}/${day}`;
+			break;
+		case "ydm":
+			formattedDate = `${year}/${day}/${month}`;
+			break;
+		case "myd":
+			formattedDate = `${month}/${year}/${day}`;
+			break;
+		case "dym":
+			formattedDate = `${day}/${year}/${month}`;
+			break;
+		default:
+			formattedDate = `${day}/${month}/${year}`;
+	}
 
-  return formattedDate;
+	return formattedDate;
 }
 
 module.exports = {
-  Number,
-  TitleCase,
-  SentenceCase,
-  CamelCase,
-  KebabCase,
-  SnakeCase,
-  DateFor,
+	Number,
+	TitleCase,
+	SentenceCase,
+	CamelCase,
+	KebabCase,
+	SnakeCase,
+	DateFor,
 };

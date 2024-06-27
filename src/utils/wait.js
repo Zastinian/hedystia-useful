@@ -10,4 +10,5 @@
  * async()
  * @returns {Promise<void>} - A promise that resolves after the specified delay.
  */
-module.exports = (delay = 0) => new Promise((resolve) => setTimeout(resolve, delay));
+module.exports = (delay = 0) =>
+	new Promise((resolve) => setTimeout(resolve, delay));

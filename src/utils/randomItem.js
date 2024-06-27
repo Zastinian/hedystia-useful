@@ -3,11 +3,11 @@
  * @param {Array} items
  * @example
  * console.log(randomItem(['a', 'b', 'c']))
- * @returns {String} String
+ * @returns {string} String
  */
 
 function randomItem(items) {
-  return items[Math.floor(Math.random() * items.length)];
+	return items[Math.floor(Math.random() * items.length)];
 }
 
 module.exports = randomItem;

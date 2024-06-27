@@ -1,13 +1,13 @@
 /**
  * Check if the text is not empty
- * @param {String} value
+ * @param {string} value
  * @example
  * console.log(isEmptyString('Something'))
- * @returns {Boolean} Boolean
+ * @returns {boolean} Boolean
  */
 
 function isEmptyString(value) {
-  return value === "";
+	return value === "";
 }
 
 module.exports = isEmptyString;
